@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  background-image: radial-gradient(circle at center, #c4b5fd, transparent);
+}
+
+h1, h2, h3, h4 {
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Mulish", sans-serif;
+
+}
+
+.link-primary {
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+}
+
+.link-primary:hover {
+  color: rgb(196, 80, 0);
+}
+
+.error {
+  color: red;
+}

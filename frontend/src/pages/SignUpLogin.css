@@ -1,0 +1,90 @@
+.signin-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.signin-box {
+  max-width: 380px;
+  width: 100%;
+  padding: 20px 26px;
+  border: 1px solid #d5d9d9;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.signin-heading {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  color: #0f1111;
+  outline: none;
+  border: 1px solid #888c8c;
+  flex: 1;
+  height: 36px;
+  border-radius: 0.25rem;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form input:focus {
+  border: 1px solid #2162a1;
+  box-shadow: 0 0 6px rgba(0, 112, 243, 0.6);
+}
+
+.account {
+  font-size: 13px;
+  margin-top: 16px;
+}
+
+.password-show {
+  position: relative;
+}
+
+.password-show p {
+  font-size: 14px;
+  text-align: center;
+  border-radius: 0.25rem;
+  position: absolute;
+  top: 0;
+  right: 1px;
+  bottom: 0;
+  padding: 8px 8px;
+  cursor: pointer;
+}
+
+.form-button {
+  width: 100%;
+  font-size: 1rem;
+  color: #FFFFFF ;
+  background-color: rgb(20, 20, 20);
+  border: 1px solid rgb(20, 20, 20);
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+  padding: 12px;
+  font-weight: 500;
+  border-radius: 50px;
+}
+
+.form-button:hover {
+  background-color: rgb(26, 26, 26);
+}
