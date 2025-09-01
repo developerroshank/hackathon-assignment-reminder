@@ -48,7 +48,9 @@ export const Login = () => {
           const token = response?.data?.token
           console.log(token, 'token');
           localStorage.setItem('token', token);
-          // navigate('/dashboard')
+          setTimeout(() => {
+            navigate("/dashboard");
+          }, 3000);
         }
       } catch (err) {
         console.log(err)

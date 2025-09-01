@@ -10,7 +10,10 @@ body {
   background-image: radial-gradient(circle at center, #c4b5fd, transparent);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   /* font-family: 'Poppins', sans-serif; */
   font-family: "Mulish", sans-serif;
 
@@ -27,4 +30,22 @@ h1, h2, h3, h4 {
 
 .error {
   color: red;
+}
+
+.form-button {
+  width: 100%;
+  font-size: 1rem;
+  color: #FFFFFF ;
+  background-color: rgb(20, 20, 20);
+  border: 1px solid rgb(20, 20, 20);
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+  padding: 12px;
+  font-weight: 500;
+  border-radius: 50px;
+}
+
+.form-button:hover {
+  background-color: rgb(26, 26, 26);
 }

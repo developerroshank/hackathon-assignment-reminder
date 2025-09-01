@@ -61,13 +61,13 @@ export const SignUp = () => {
         console.log(err?.response?.data);
         toast.error(err?.response?.data?.message);
       }
+      setForm({
+        username: "",
+        email: "",
+        contact: "",
+        password: "",
+      });
     }
-    setForm({
-      username: "",
-      email: "",
-      contact: "",
-      password: "",
-    });
   }
 
   return (
@@ -118,7 +118,7 @@ export const SignUp = () => {
         </div>
       </div>
 
-      <ToastContainer/>
+      <ToastContainer />
     </>
 
   )

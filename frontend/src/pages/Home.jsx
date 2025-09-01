@@ -1,8 +1,11 @@
 import React from 'react'
 import { Header } from '../components/Header'
+import { useNavigate } from 'react-router-dom'
 import './Home.css'
 
 export const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Header />
@@ -12,7 +15,7 @@ export const Home = () => {
         <p>
           AssignMe helps students track deadlines, get reminders, and stay stress-free.
         </p>
-        <button>Get Started</button>
+        <button onClick={() => navigate('/dashboard')}>Get Started</button>
       </section>
 
 

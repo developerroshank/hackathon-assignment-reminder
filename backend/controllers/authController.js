@@ -11,11 +11,6 @@ function homeController(req, res) {
   res.send('Home Page');
 }
 
-// const loginController = (req, res) => {
-//   console.log(req.body)
-//   res.send(`Hello, ${req.body.name}`);
-// }
-
 const signUpController = async (req, res) => {
   const { username, email, contact, password } = req.body
 
@@ -45,13 +40,13 @@ const loginController = async (req, res) => {
   const user = await USER.findOne({ email: email });
 
   if (!user) {
-    return res.status(404).json({ message: "user not found", status: 404, success: false });
+    return res.status(404).json({ message: "User Not Found", status: 404, success: false });
   }
 
   const isMatched = await bcrypt.compare(password, user.password);
 
   if (!isMatched) {
-    return res.status(301).json({ message: "password not match!!", status: 301, success: false });
+    return res.status(301).json({ message: "Ppassword Not Match!!", status: 301, success: false });
   }
 
   const payload = {

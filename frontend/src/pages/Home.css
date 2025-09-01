@@ -112,3 +112,9 @@ section.hero {
   font-size: 14px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer {
+    position: static;
+  }
+}
+
