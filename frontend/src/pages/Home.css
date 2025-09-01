@@ -40,7 +40,7 @@ section.hero {
 }
 
 .hero button:hover {
-  background-color: #1E40AF;
+  /* background-color: #1E40AF; */
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(37, 99, 235, 0.4);
 }

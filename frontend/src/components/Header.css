@@ -33,7 +33,7 @@
 }
 
 .button-header {
-  background-color: #2563EB; /* Primary Blue */
+  background-color: rgb(19, 25, 33);
   color: white;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -46,7 +46,7 @@
 }
 
 .button-header:hover {
-  background-color: #1E40AF; /* Darker blue */
+  background-color: rgb(26, 26, 26);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
