@@ -42,7 +42,7 @@ export const Login = () => {
 
     if (validate()) {
       try {
-        const response = await axios.post('https://hackathon-assignment-reminder.vercel.app/login', form);
+        const response = await axios.post('https://hackathon-assignment-reminder.onrender.com/login', form);
         if (response?.data?.status === 200) {
           toast.success(response?.data?.message);
           const token = response?.data?.token
