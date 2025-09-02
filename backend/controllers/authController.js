@@ -30,7 +30,7 @@ const signUpController = async (req, res) => {
 
   await newUser.save();
 
-  return res.status(200).json({ message: 'User Save Successfully!!', newUser, status: 200, success: true });
+  return res.status(200).json({ message: 'Account Created Successfully!!', newUser, status: 200, success: true });
 
 }
 
