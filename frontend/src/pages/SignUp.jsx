@@ -52,7 +52,7 @@ export const SignUp = () => {
     if (validate()) {
       console.log("Form submitted ✅", form);
       try {
-        const response = await axios.post('https://hackathon-assignment-reminder.vercel.app/signup', form);
+        const response = await axios.post('https://hackathon-assignment-reminder.onrender.com/signup', form);
         console.log(response?.data);
         if (response?.data?.status === 200)
           toast.success(response?.data?.message);
