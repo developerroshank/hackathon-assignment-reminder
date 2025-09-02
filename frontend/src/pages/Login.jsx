@@ -42,7 +42,7 @@ export const Login = () => {
 
     if (validate()) {
       try {
-        const response = await axios.post('http://localhost:5000/login', form);
+        const response = await axios.post('https://hackathon-assignment-reminder.vercel.app/login', form);
         if (response?.data?.status === 200) {
           toast.success(response?.data?.message);
           const token = response?.data?.token
@@ -105,7 +105,7 @@ export const Login = () => {
 
       </div>
 
-      <ToastContainer/>
+      <ToastContainer />
     </>
 
   )
